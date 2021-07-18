@@ -1,0 +1,14 @@
+//
+// Created by brian on 18/7/21.
+//
+
+#ifndef SISOP_TP2_GRUPO3_FIUBA_INICIALIZADOR_H
+#define SISOP_TP2_GRUPO3_FIUBA_INICIALIZADOR_H
+
+
+class Inicializador {
+
+};
+
+
+#endif //SISOP_TP2_GRUPO3_FIUBA_INICIALIZADOR_H
