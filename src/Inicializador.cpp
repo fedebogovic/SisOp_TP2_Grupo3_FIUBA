@@ -2,11 +2,13 @@
 // Created by brian on 18/7/21.
 //
 
-#include "Inicializador.h"
+#include "sv_sem.h"
+#include "sv_shm.h"
 #include "Impresor.h"
-int main (){
+
+int main() {
     imprimir_padrones();
-    sv_sem sem_boot("semBoot",0);
-    cout<<"Semaforos inicializados"<<endl;
+    sv_sem sem_boot("semBoot", 0);
+    cout << "Semaforos inicializados" << endl;
     return 0;
 }
