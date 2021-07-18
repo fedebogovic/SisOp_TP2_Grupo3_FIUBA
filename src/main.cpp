@@ -16,6 +16,10 @@
  * */
 //
 int main(int argc, char *argv[]){
+    cout << 98541 << " Zambelli Tello, Brian" << endl;
+    cout << 00000 << " X,Joaquin" << endl;
+    cout << 00000 << " Y,Federico" << endl;
+    cout << " " << endl;
     list<char*> otaku_list;
     list<char*> gotics_list;
 
