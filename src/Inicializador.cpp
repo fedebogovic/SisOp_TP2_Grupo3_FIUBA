@@ -6,7 +6,7 @@
 #include "Impresor.h"
 int main (){
     imprimir_padrones();
-    sv_sem sem_soga("semBoot",0);
+    sv_sem sem_boot("semBoot",0);
     cout<<"Semaforos inicializados"<<endl;
     return 0;
 }
