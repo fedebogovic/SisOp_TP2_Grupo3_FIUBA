@@ -4,6 +4,9 @@
 
 #include "Inicializador.h"
 #include "Impresor.h"
+#include <iostream>
+using namespace std;
+
 int main (){
     imprimir_padrones();
     sv_sem sem_soga("semBoot",0);

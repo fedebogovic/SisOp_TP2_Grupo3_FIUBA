@@ -5,6 +5,9 @@
  * 4 iguales o 2 y 2. EN dicho caso, los finaliza.
  * */
 //
+#include <iostream>
+using namespace std;
+
 int main(int argc, char *argv[]){
     cout << 98541 << " Zambelli Tello, Brian" << endl;
     cout << 00000 << " X,Joaquin" << endl;
