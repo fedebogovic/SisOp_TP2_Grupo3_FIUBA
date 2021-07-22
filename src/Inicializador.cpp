@@ -4,6 +4,7 @@
 
 #include "Inicializador.h"
 #include "Impresor.h"
+#include "sv_sem.h"
 #include <iostream>
 using namespace std;
 
