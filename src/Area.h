@@ -104,7 +104,6 @@ public:
 	int sentarse(std::string tribu){
 		persona p = this->addPersona(tribu);
 		for (int i = 0; i < 5; i++) {
-			cout<<"iterando en sentarse: "<<i<<" con valor: "<<silla[i]<<endl;
 			if (silla[i]==vacio){
 				silla[i]=p;
 				return i;

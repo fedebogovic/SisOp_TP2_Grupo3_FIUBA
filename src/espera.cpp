@@ -3,7 +3,12 @@
 #include "sv_shm.h"
 #include "Area.h"
 
-
+/* void imprimir_padrones(){
+    cout << 98541 << " Zambelli Tello, Brian" << endl;
+    cout << 100752 << " X,Joaquin" << endl;
+    cout << 00000 << " Y,Federico" << endl;
+    cout << " " << endl;
+} */
 
 int main(int argc, char * argv[]){
     if (argc != 2 || (strcmp(argv[1], "otaku") && strcmp(argv[1], "gotico"))) {
@@ -25,8 +30,6 @@ int main(int argc, char * argv[]){
     sala = static_cast <Area*>(aFilo.map(sizeof(Area)));
 
     cout<< "Sos el "<<tribu<<" PID="<<yoid<<" y entraste en la sala de espera .... (un string para sentarte)"<<endl;
-    //string rta;
-    //cin>>rta;
 
     mutex.wait();
     int miSilla = sala->sentarse(tribu);
@@ -37,11 +40,8 @@ int main(int argc, char * argv[]){
     if (sala->puedeArmarCabina()) {
         int * ingresantes = sala->armarCabina();
         for (int i = 0; i < 4; i++){
-            //cout<< "Avisando a Silla "<<i<<" que ingrese.... "<<endl;
             salaSem[ingresantes[i]]->post();
         }        
-        //cout<< "Ingresaste en la cabina "<<sala->getNumeroCabina()<<", a jugar!"<<endl;
-        //exit(0);
     }
     mutex.post();
     
