@@ -15,5 +15,4 @@
 #include <cstring>
 #include <iostream>
 #include <iomanip>
-#define CLAVE "/home"
-using namespace std;								
+using namespace std;
