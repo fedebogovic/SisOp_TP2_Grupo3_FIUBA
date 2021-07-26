@@ -12,5 +12,31 @@ int main(int argc, char *argv[]) {
     //una lista de otakus. Habria que ver si los otakus son efectivamente la clase que engloba
     // el proceso otaku_list;
     // Idem gotics list<char*> gotics_list;
+    lista(goticos)
+    lista(otakus)
+    definimos semaforo("sala de espera")
+    while true
+    chequear
+    los
+    procesos
+    asociados
+    al semaforo()
+    vemos
+    si
+    estan
+    en
+    las listas
+    Si
+    no
+    estan, los
+    agregamos
+    IF(cond1 or cond2):
+    para
+    cada proceso
+    post();
+    1
+    gotico
+    2
+    goticos
 
 }
