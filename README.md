@@ -12,11 +12,11 @@ Es necesario ejecutar el comando
 
 `Make all` 
 
-para la correcta compilacion del codigo. Con 
+para la correcta compilacion del codigo. En caso de que se quieran borrar los ejecutables, se utiliza el siguiente comando: 
 
 `Make clean` 
 
-se eliminan todos los archivos compilados. Todo esto es posible gracias al archivo Makefile creado, por tanto, estos comandos deben ejecutarse en la localizacion de dicho archivo.
+Esto es posible gracias al archivo Makefile creado, por tanto, estos comandos deben ejecutarse en la localizacion de dicho archivo.
 
 ## Modo de uso
 
