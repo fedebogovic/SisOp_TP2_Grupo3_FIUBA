@@ -1,15 +1,15 @@
 #ifndef Area_h
 #define Area_h
 
-enum persona {vacio, gotico, otaku};
-enum tipoCabina {cabina_otaku, cabina_gotica, cabina_mixta};
+enum persona {vacio=0, gotico=1, otaku=2};
+enum tipoCabina {cabina_otaku=0, cabina_gotica=1, cabina_mixta=2};
 
 class Area{	
 	persona silla[5]={vacio, vacio, vacio, vacio, vacio};
 	int numeroCabina=0;
 	int otakus=0;
 	int goticos=0;
-    std::string tiposDeCabina[3]={"otaku", "gotica", "mixta"};
+	tipoCabina tipoDeCabina = cabina_mixta;
 
 	persona addPersona(std::string tribu) {
 		if (tribu == "otaku") {
@@ -54,14 +54,12 @@ class Area{
 
 	int * armarCabina(tipoCabina tipoCabina) {
 		int* integrantes;
+		tipoDeCabina = tipoCabina;
 		if (tipoCabina == cabina_mixta) {
-			cout<<"Armando cabina mixta"<<endl;
 			integrantes = armarCabinaMixta();
 		} else if ( tipoCabina == cabina_otaku) {
-			cout<<"Armando cabina otaku"<<endl;
 			integrantes = armarCabinaOtaku();
 		} else {
-			cout<<"Armando cabina gotica"<<endl;
 			integrantes = armarCabinaGotica();
 		}
 		numeroCabina++;	
@@ -83,13 +81,11 @@ class Area{
         for (int i = 0; i < 5; i++) {
             if (silla[i] == p) {
                 silla[i] = vacio;
-                cout << "saque al " << p << " en la silla " << i << endl;
                 return i;
             }
         }
         return -1;
     }
-
 
 public:
 	Area(){};
@@ -99,7 +95,13 @@ public:
 	}
 
 	std::string getNombreCabina(){
-		return tiposDeCabina[getTipoCabina()];
+		if (tipoDeCabina == cabina_otaku) {
+			return "otaku";
+		} else if (tipoDeCabina == cabina_gotica) {
+			return "gotica";
+		} else {
+			return "mixta";
+		}
 	}
 
 	int sentarse(std::string tribu){
