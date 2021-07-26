@@ -3,19 +3,19 @@
 #include "sv_shm.h"
 #include "Area.h"
 
-/* void imprimir_padrones(){
-    cout << 98541 << " Zambelli Tello, Brian" << endl;
-    cout << 100752 << " X,Joaquin" << endl;
-    cout << 00000 << " Y,Federico" << endl;
-    cout << " " << endl;
-} */
+ void imprimir_padrones() {
+     cout << 98541 << " Zambelli Tello, Brian" << endl;
+     cout << 100752 << " Parodi,Joaquin" << endl;
+     cout << 96722 << " Bogovic,Federico Ezequiel" << endl;
+     cout << " " << endl;
+ }
 
 int main(int argc, char * argv[]){
     if (argc != 2 || (strcmp(argv[1], "otaku") && strcmp(argv[1], "gotico"))) {
         cerr<<"Uso: "<<argv[0]<<" <otaku/gotico>"<<endl;
         exit(2);
     }
-    
+    imprimir_padrones();
     std::string tribu = std::string(argv[1]);
     int yoid=getpid();
 

@@ -80,14 +80,15 @@ class Area{
 	}
 
 	int sacarPersona(persona p) {
-		for (int i = 0; i < 5; i++) {
-			if (silla[i]==p){
-				silla[i]=vacio;
-				cout<<"saque al "<<p<<" en la silla "<<i<<endl;
-				return i;
-			}
-		}
-	}
+        for (int i = 0; i < 5; i++) {
+            if (silla[i] == p) {
+                silla[i] = vacio;
+                cout << "saque al " << p << " en la silla " << i << endl;
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 public:
