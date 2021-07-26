@@ -10,13 +10,15 @@
 ## Compilacion y makefile
 Es necesario ejecutar el comando
 
-`Make all` 
+`make all` 
 
 para la correcta compilacion del codigo. En caso de que se quieran borrar los ejecutables, se utiliza el siguiente comando: 
 
-`Make clean` 
+`make clean` 
 
 Esto es posible gracias al archivo Makefile creado, por tanto, estos comandos deben ejecutarse en la localizacion de dicho archivo.
+
+El output serán dos ejecutables (espera y libera)
 
 ## Modo de uso
 
@@ -31,17 +33,19 @@ Para otaku:
 
 `./espera otaku`
 
-En ambos casos, es necesaria una posterior confirmacion con el ingreso de cualquier caracter.
-Una vez que se cumpla cualquiera de las siguientes dos condiciones:
+De esta manera se ingresa a la sala de espera.
+Una vez que se cumpla cualquiera de las siguientes tres condiciones:
 
-1- Hay dos instancias de otakus y dos instancias de goticos
-2- Hay cuatro instancias de otakus o cuatro instancias de goticos
+- Hay dos instancias de otakus y dos instancias de goticos (sala "mixta")
+- Hay cuatro instancias de otakus (sala "otaku")
+- Hay cuatro instancias de goticos (sala "gotica")
 
-El proceso principal finalizara a las instancias que cumplan la condicion.
+
+Se emulará la creacion de una cabina finalizando las instancias que cumplan, dandolos como que ingresaron a la misma informando a qué número de sala ingresaron y de qué tipo es.
 
 ### Finalizacion
-Una vez terminada la simulacion de procesos, se recomienda la ejecucion de 
+Una vez terminada la simulacion de procesos, se recomienda la ejecucion del comando:
 
 `./libera`
 
-para la eliminacion de cualquier archivo basura generado producto del manejo de memoria compartida
+para la eliminacion de cualquier archivo generado producto del manejo de memoria compartida.
